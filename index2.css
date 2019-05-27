@@ -1,0 +1,238 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+}
+
+body{
+    background: url(https://media.gq.com/photos/581799e0a6fe84375dbe8d86/16:9/w_1280,c_limit/Cheese%25201.jpg) fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+  text-align: center; 
+  font-size: 25px;
+  width: 100%; 
+}
+
+h1{
+  position: relative;
+  top: 20px;
+}
+
+.js-question-counter{
+ font-size: 25px;
+ text-align: center;
+ position: relative;
+ top: 20px;
+ letter-spacing: 2px;
+}
+
+.js-start-button{
+  padding: 15px;
+  background-color: rgba(202, 202, 128, 0.863);
+  border:none;
+  width: 250px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 15px;
+  color: white;
+}
+
+.js-start-button:hover{
+    background-color: lightcyan;
+    color: rgb(94, 94, 64);
+}
+
+.start-page{
+    display: block;
+    text-align: center;
+    position: relative;
+    top: 20px;
+    padding:15px;
+    margin: 20px;
+}
+
+.question-page{
+    display: none;
+    width: 80%;
+    position: relative;
+    top: 50px;
+    text-align: center;
+}
+
+.answerSubmit{
+    background-color: rgba(226, 226, 155, 0.849);
+    width: 60%;
+    height: 40px;
+    margin:10px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: none;
+    position: relative;
+    left: 10px;
+}
+.answerSubmit:hover{
+    background-color: rgb(183, 219, 198);
+    color: white;
+}
+
+input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 3px solid white;
+    margin-right: 10px;  
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+input:checked{
+    background-color: rgb(115, 128, 134);
+}
+
+
+.questionNum{
+    text-align: center;
+    font-style: bold;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    color: rgb(253, 245, 245);
+    text-shadow: 3px 2px rgb(32, 37, 36);
+}
+.answerChoices{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+label{
+    padding: 20px;
+    color: rgb(14, 1, 1);
+    letter-spacing: 4px;
+    font-size: 25px; 
+    width: 100%; 
+    height: 75px;
+    font-weight: bold;
+    display: block;
+}
+
+label:nth-child(even){
+    background-color: rgba(204, 194, 172, 0.623);
+}
+label:nth-child(odd){
+    background-color: rgba(243, 231, 176, 0.705);
+}
+label:hover{
+    background-color: rgba(143, 165, 160, 0.733);
+}
+
+div.answerFeedback{
+    display: block;
+    width: 100%;
+    background-color:white;
+    box-shadow: 0 4px 5 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    color: rgb(60, 109, 138);
+    margin-bottom: 20px;;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.answerFeedback img{
+    width: 100%;
+    height: 50%;
+
+}
+
+.nextButton{
+    border: none;   
+    width: 100%;
+    height: 100%;
+    background-color: rgba(151, 160, 100, 0.808); 
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+}
+.nextButton:hover{
+    background-color:white;
+    color: black;
+}
+.resultsFeedback{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    background-image: url(https://media2.giphy.com/media/xFZBxAyBXfXkA/giphy.webp?cid=790b76115cec23b84d5336325515ecca&rid=giphy.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 450px;
+    padding: 50px;
+    position: relative;
+    right: 50px;
+}
+.restartButton{
+    width: 100%;
+    background-color: rgba(208, 199, 216, 0.829);
+    border: 1px rgb(121, 77, 121);
+    padding: 2px;
+    font-size: 15px;
+    position: relative;
+    top: 150px;
+}
+.restartButton:hover{
+    background-color: rgb(107, 157, 180);
+}
+
+fieldset{
+    border: none;
+}
+footer{
+   width: 30px;
+   height: 40px;
+   font-size: 25px; 
+   text-align: center;
+   font-weight: bold;
+   letter-spacing: 2px;
+   margin-bottom: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.js-score{
+    position: relative;
+    top: 50px;
+}
+
+
+
+@media screen and (min-width: 1198px){
+    .start-page, .question-page{
+      width: 80%; 
+    }
+
+}
+     footer{
+         position: relative;
+         bottom: 60px;
+     }
+
