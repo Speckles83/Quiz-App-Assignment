@@ -195,7 +195,7 @@ function resultsPage(){
     if(score >= 7){
       $('.question-page').html(
      `<div class="resultsFeedback">
-      <h3>Good Job!</h3><p>Your score is ${score}</p>
+      <h3>Great Job!</h3><p>Your score is ${score}</p>
       <button class="restartButton">Restart Quiz</button></div>`);
     }else {
       $('.question-page').html(
